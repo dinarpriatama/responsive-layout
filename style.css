@@ -48,11 +48,11 @@ nav ul li a:hover {
 }
 
 .main-container {
-    background-color: #4B5945;
+    background-color: #66785F;
     display: grid;
     grid-template-columns: 20% 80%;
     column-gap: 0;
-    margin: 0;
+    margin: 2px;
 }
 
 .sidebar-container > ul {
@@ -80,4 +80,30 @@ nav ul li a:hover {
 .sidebar-container li a:hover {
     background-color: #66785F;
     color: black;
+}
+
+.article-container {
+    color: whitesmoke;
+    padding: 5px;
+}
+
+.article-container h5 {
+    text-align: center;
+}
+
+.card-grid-container {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-evenly;
+    height: 550px;
+}
+
+.card {
+    margin: 5px;
+    background-color: #B2C9AD;
+}
+
+.card-text {
+    text-align: center;
 }
