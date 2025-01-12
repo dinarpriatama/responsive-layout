@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: nowrap;
     margin: 2px; 
     background-color: #333;
@@ -31,6 +31,7 @@ nav > ul {
 
 nav li {
     float: left;
+    color: white;
 }
 
 nav li a {
@@ -41,6 +42,42 @@ nav li a {
     text-decoration: none;
 }
 
-li a:hover {
+nav ul li a:hover {
     background-color: #111;
+    border-radius: 8px;
+}
+
+.main-container {
+    background-color: #4B5945;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 0;
+    margin: 0;
+}
+
+.sidebar-container > ul {
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #B2C9AD;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0px;
+    padding-left: 4px;
+    
+}
+
+.sidebar-container ul li a {
+    padding: 5px;
+    font-size: 18px;
+    margin: 0px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.sidebar-container li a:hover {
+    background-color: #66785F;
+    color: black;
 }
